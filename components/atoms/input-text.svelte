@@ -1,16 +1,7 @@
 <script>
   import { createEventDispatcher } from "svelte";
 
-  export let value = ""
-
-//   const dispatch = createEventDispatcher();
-
-//   const fireChange = (event) => {
-//     dispatch('change', value);
-//   };
-
-//   $: value, dispatch("change", { value })
-
+  export let value
 </script>
 
 <style>
@@ -19,4 +10,4 @@
   }
 </style>
 
-<input data-testid="foo" class="input" type="text" bind:value={value} />
+<input data-testid="input-text" class="input" type="text" bind:value={value} />

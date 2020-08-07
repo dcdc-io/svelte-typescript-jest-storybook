@@ -3,9 +3,15 @@ import { render, fireEvent } from '@testing-library/svelte'
 
 describe('journey-question', () => {
     it('etc', async () => {
-        const { getByText, getByTestId } = render(JourneyQuestion)
+        const question = "this is the question"
+        const answer = "okay"
 
-        let k = getByTestId("foo").textContent
-        expect(k).toBe("")
+        const { getByText, getByTestId } = render(JourneyQuestion, {
+            question,
+            answer
+        })
+
+        expect(getByTestId("question").textContent).toBe(question)
+        expect(getByTestId("input-text").value).toBe(answer)
     })
 })
