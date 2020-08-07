@@ -21,7 +21,7 @@ export const Emoji = () => ({
 });
 
 
-import InputText from '../components/atoms/input-text.svelte'
+import InputText from '../src/components/atoms/input-text.svelte'
 
 export const Input = () => ({
   Component: InputText,
