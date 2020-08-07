@@ -1,12 +1,18 @@
 # Svelte => TypeScript => Jest => StoryBook => An Atomic Design Boilerplate
 
-This boilerplate is extracted from a work in progress project and won't get much attention in and of itself right now.
+> Note: This boilerplate is extracted from a work in progress project and won't get much attention in and of itself right now. If you want to add to or improve on it, glady fork it and send any relevant pull requests.
 
-If you are starting a project that combines all the above, then fork this repository.
+## Get it:
 
-## Commands:
+`npx degit https://github.com/dcdc-io/svelte-typescript-jest-storybook my-project`
 
-### Run tests:
+## Use it:
+
+### Setup:
+
+> `yarn`
+
+### Test:
 
 > `yarn test`
 
@@ -18,7 +24,7 @@ To run with hot reloading:
 
 To produce a static build:
 
-> `yarn build-storybook` to build 
+> `yarn build-storybook` 
 
 ### App:
 
