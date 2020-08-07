@@ -19,4 +19,4 @@
   }
 </style>
 
-<input class="input" type="text" bind:value={value} />
+<input data-testid="foo" class="input" type="text" bind:value={value} />

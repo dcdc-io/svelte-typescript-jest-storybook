@@ -1,6 +1,6 @@
 import { action } from '@storybook/addon-actions';
 
-import JourneyQuestion from './journey-question.svelte'
+import JourneyQuestion from './index.svelte'
 
 export default {
     title: 'journey-question',

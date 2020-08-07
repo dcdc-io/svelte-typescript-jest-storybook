@@ -11,15 +11,21 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@testing-library/svelte": "^3.0.0",
+    "jest": "^26.2.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/svelte": "^5.3.19",
+    "babel-jest": "^26.2.2",
     "babel-loader": "^8.1.0",
     "svelte": "^3.24.1",
+    "svelte-jester": "^1.0.6",
     "svelte-loader": "^2.13.6"
   }
 }
