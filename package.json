@@ -14,9 +14,16 @@
     "dev": "npm run dev:livereload",
     "start": "sirv public"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "svelte",
+    "typescript",
+    "jest",
+    "starter",
+    "boilerplate",
+    "storybook"
+  ],
+  "author": "Benjamin Babik",
+  "license": "MIT",
   "dependencies": {
     "@testing-library/svelte": "^3.0.0",
     "@tsconfig/svelte": "^1.0.8",
