@@ -4,9 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "rollup -c",
+    "dev:rollup": "rollup -c -w",
+    "dev:livereload": "rollup -c -w --environment LIVERELOAD",
+    "dev:nollup": "nollup -c --hot --port 5000 --content-base ./public",
+    "dev": "npm run dev:livereload",
+    "start": "sirv public"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +24,18 @@
     "jest": "^26.2.2",
     "svelte-check": "^1.0.9",
     "svelte-preprocess": "^4.0.10",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "sirv-cli": "^0.4.4"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "nollup": "^0.12.0",
+    "rollup": "^2.10.2",
+    "rollup-plugin-hot": "^0.1.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte-hot": "^0.10.0",
+    "rollup-plugin-terser": "^5.1.2",
     "@babel/core": "^7.11.1",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-typescript": "^7.10.4",

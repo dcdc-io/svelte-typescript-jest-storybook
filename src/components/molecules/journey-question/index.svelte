@@ -1,8 +1,8 @@
 <script lang="ts">
   import { createEventDispatcher } from "svelte";
 
-  import InputText from "../../atoms/input-text.svelte";
-  import InputButton from "../../atoms/input-button.svelte";
+  import InputText from "../../atoms/input/input-text.svelte";
+  import InputButton from "../../atoms/input/input-button.svelte";
 
   export let question: string = "?";
   export let answer: string = "?";
